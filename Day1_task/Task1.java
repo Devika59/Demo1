@@ -1,18 +1,35 @@
 package add_DSA;
 
 import java.util.Arrays;
+import java.util.Scanner;
+
 
 public class Task1 {
-	public static void main(String[] args) {
-		int[] arr= {12,13,14,15,16};
-		System.out.println(Arrays.toString(arr));
-		for(int i=0;i<5;i++) {
-			System.out.println(arr[i]);
+
+
+
+
+
+
+	public static int fact(int n) {
+		
+		if (n==0||n==1) {
+			return 1;
 		}
+		else 
+				return n*fact(n-1);
+			 
 		
-	
-			
+	}	
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+
+        	System.out.println("Enter number");
+        	int num=sc.nextInt();
+        	System.out.println(fact(num));
+        	
+
+}		
 		
-	}
 
 }
