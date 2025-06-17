@@ -1,0 +1,6 @@
+use addon;
+create table Devika(name varchar(20),marks int,department varchar(7),section varchar(10));
+select *from Devika;
+insert into Devika values("devika",98,"BCA","B"),("manisha",97,"BCA","B"),("sahana",90,"BCA","B"),("narmatha",100,"BCA","B"),("srisubha",55,"Bcom","B");
+update Devika set name="sasmitha" where name="srisubha";
+select name,department,section from Devika where (marks<60);
